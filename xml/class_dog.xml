@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_dog" kind="class" language="C++" prot="public">
+    <compoundname>Dog</compoundname>
+    <includes refid="dog_8hpp" local="no">dog.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_dog_1aef517d1bf3fce93a2cc722ff0b7d13ff" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* Dog::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>Dog::name</qualifiedname>
+        <briefdescription>
+<para>The dog&apos;s name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Represents the dog&apos;s name. This is set when the dog is created, and cannot be changed afterwards. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dog.hpp" line="79" column="16" bodyfile="src/dog.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dog_1a7adc584eba62f218dd3170a8a1fbf176" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Dog::energy</definition>
+        <argsstring></argsstring>
+        <name>energy</name>
+        <qualifiedname>Dog::energy</qualifiedname>
+        <briefdescription>
+<para>The dog&apos;s available energy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Represents the amount of energy the dog has available. This is set in the constructor and should not be accessed externally. Taking actions that cost the dog energy will cause this value to drop, and sleeping will cause this value to rise. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dog.hpp" line="89" column="9" bodyfile="src/dog.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_dog_1add97c728b3dd9652ce9c68276774242c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Dog::Dog</definition>
+        <argsstring>(const char *_name)</argsstring>
+        <name>Dog</name>
+        <qualifiedname>Dog::Dog</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new <ref refid="class_dog" kindref="compound">Dog</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a new <ref refid="class_dog" kindref="compound">Dog</ref> named <computeroutput>_name</computeroutput> with half of its maximum energy.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dog&apos;s name. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dog.hpp" line="22" column="5" bodyfile="src/dog.cpp" bodystart="5" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dog_1a710429cc93dc5140d5616f72804468a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dog::bark</definition>
+        <argsstring>(void)</argsstring>
+        <name>bark</name>
+        <qualifiedname>Dog::bark</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Causes the dog to bark. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Causes the dog to bark if it has enough energy to do so. Barking costs 1 energy to do. If the dog does not have enough energy, then the bark fails. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dog.hpp" line="32" column="10" bodyfile="src/dog.cpp" bodystart="10" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dog_1a756ea89c1b661023452d87063049145e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dog::run</definition>
+        <argsstring>(int minutes)</argsstring>
+        <name>run</name>
+        <qualifiedname>Dog::run</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>minutes</declname>
+        </param>
+        <briefdescription>
+<para>Causes the dog to run. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Causes the dog to run for an amount of time if it has enough energy to run for that long. If the dog does not have enough energy, then the run fails. If the dog cannot complete the full run, no running takes place and no energy is expended. Running costs 3 energy per minute.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>minutes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of minutes for the dog to run. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dog.hpp" line="45" column="10" bodyfile="src/dog.cpp" bodystart="20" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dog_1a8082ce753fd0911a6744bfa553a65e48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dog::sleep</definition>
+        <argsstring>(int minutes)</argsstring>
+        <name>sleep</name>
+        <qualifiedname>Dog::sleep</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>minutes</declname>
+        </param>
+        <briefdescription>
+<para>Causes the dog to sleep. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sleeping replenishes the dog&apos;s energy. The dog regains an amount of energy equal to twice the number of minutes slept. The dog will always sleep, regardless of how much energy it has remaining.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>minutes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of minutes for the dog to sleep. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dog.hpp" line="56" column="10" bodyfile="src/dog.cpp" bodystart="37" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_dog_1a50f21c8181e2871699af6fe8edad9a4f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Dog::checkEnergy</definition>
+        <argsstring>(int energyToExpend)</argsstring>
+        <name>checkEnergy</name>
+        <qualifiedname>Dog::checkEnergy</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>energyToExpend</declname>
+        </param>
+        <briefdescription>
+<para>Checks the dog&apos;s energy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Compares an amount of energy with the dog&apos;s current available energy. This function can be used to determine if the dog is able to take an action that costs energy.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>energyToExpend</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An amount of energy to check.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the dog has enough energy, and false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dog.hpp" line="70" column="10" bodyfile="src/dog.cpp" bodystart="50" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a dog. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class keeps track of the dog&apos;s energy level, and performs actions for the dog based on how much energy it has. Sleeping regains energy for the dog, while barking and running use energy up. </para>
+    </detaileddescription>
+    <location file="src/dog.hpp" line="13" column="1" bodyfile="src/dog.hpp" bodystart="13" bodyend="90"/>
+    <listofallmembers>
+      <member refid="class_dog_1a710429cc93dc5140d5616f72804468a9" prot="public" virt="non-virtual"><scope>Dog</scope><name>bark</name></member>
+      <member refid="class_dog_1a50f21c8181e2871699af6fe8edad9a4f" prot="protected" virt="non-virtual"><scope>Dog</scope><name>checkEnergy</name></member>
+      <member refid="class_dog_1add97c728b3dd9652ce9c68276774242c" prot="public" virt="non-virtual"><scope>Dog</scope><name>Dog</name></member>
+      <member refid="class_dog_1a7adc584eba62f218dd3170a8a1fbf176" prot="private" virt="non-virtual"><scope>Dog</scope><name>energy</name></member>
+      <member refid="class_dog_1aef517d1bf3fce93a2cc722ff0b7d13ff" prot="private" virt="non-virtual"><scope>Dog</scope><name>name</name></member>
+      <member refid="class_dog_1a756ea89c1b661023452d87063049145e" prot="public" virt="non-virtual"><scope>Dog</scope><name>run</name></member>
+      <member refid="class_dog_1a8082ce753fd0911a6744bfa553a65e48" prot="public" virt="non-virtual"><scope>Dog</scope><name>sleep</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

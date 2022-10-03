@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="utility_8cpp" kind="file" language="C++">
+    <compoundname>utility.cpp</compoundname>
+    <includes refid="utility_8hpp" local="yes">utility.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>src/utility.cpp</label>
+        <link refid="utility_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>utility.hpp</label>
+        <link refid="utility_8hpp"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="utility_8cpp_1ab12b3cad66448e2bfc8c590d002052da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int square</definition>
+        <argsstring>(int x)</argsstring>
+        <name>square</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Squares a number. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function multiplies a given number by itself, which results in the square of that number.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number to square.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The square of the number. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utility.cpp" line="3" column="5" bodyfile="src/utility.cpp" bodystart="3" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="utility_8cpp_1a50de380d6a4786c51a18168d9d9c7fa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int multiply</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>multiply</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Multiplies two numbers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function multiplies a number times another number and returns the result of those two numbers multiplied together. The result is the product of the two numbers, and that is the value that is returned by this function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first operand.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second operand.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The product of <computeroutput>x</computeroutput> and <computeroutput>y</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utility.cpp" line="7" column="5" bodyfile="src/utility.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="utility_8cpp_1a07a97f4470961bb441483bc3e8748861" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int magic</definition>
+        <argsstring>(int x)</argsstring>
+        <name>magic</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Function for magic math. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function multiplies a number by the magic number.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number on which to perfom magic.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The magic product of the number. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utility.cpp" line="11" column="5" bodyfile="src/utility.cpp" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="utility_8cpp_1ab2d299d418c81fbbdb83fe90f0d11bb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int battleOfTheFiveGods</definition>
+        <argsstring>()</argsstring>
+        <name>battleOfTheFiveGods</name>
+        <briefdescription>
+<para>Multiplies all the gods together. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function just multiplies the five god constants together.</para>
+<para><simplesect kind="return"><para>The product of the five numbers. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utility.cpp" line="15" column="5" bodyfile="src/utility.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="utility_8hpp" kindref="compound">utility.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="utility_8cpp_1ab12b3cad66448e2bfc8c590d002052da" kindref="member">square</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x)<sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>*<sp/>x;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="utility_8cpp_1a50de380d6a4786c51a18168d9d9c7fa1" kindref="member">multiply</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y)<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>*<sp/>y;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="utility_8cpp_1a07a97f4470961bb441483bc3e8748861" kindref="member">magic</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x)<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="utility_8hpp_1a54061e5993a5517320d425f44408cc86" kindref="member">MAGIC_NUMBER</ref><sp/>*<sp/>x;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="utility_8cpp_1ab2d299d418c81fbbdb83fe90f0d11bb2" kindref="member">battleOfTheFiveGods</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="utility_8hpp_1ab061ffa7c68d5cca380b1f64c9204b83" kindref="member">MEW2KING</ref><sp/>*<sp/><ref refid="utility_8hpp_1a84422ed724d308e43cb462ed2cca7b39" kindref="member">ARMADA</ref><sp/>*<sp/><ref refid="utility_8hpp_1afdf84e7b9d37278d4cea42acff4ef615" kindref="member">HUNGRYBOX</ref><sp/>*<sp/><ref refid="utility_8hpp_1ad5a7ff36c1ed8185f5255948db1f96af" kindref="member">MANGO</ref><sp/>*<sp/><ref refid="utility_8hpp_1a426e97e822c3b5d5e62f12c5bfe2063b" kindref="member">PPMD</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/utility.cpp"/>
+  </compounddef>
+</doxygen>
